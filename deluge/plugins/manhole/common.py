@@ -43,7 +43,7 @@ __all__ = ['get_resource', 'get_manhole', 'create_manhole']
 
 def get_resource(filename):
     import pkg_resources, os
-    return pkg_resources.resource_filename("DelugeManhole", os.path.join("data", filename))
+    return pkg_resources.resource_filename("deluge.plugins.manhole", os.path.join("data", filename))
 
 
 def get_manhole():
